@@ -1,4 +1,4 @@
-<img src="[src/logo.png](https://raw.githubusercontent.com/aejics/ReservaSalas/refs/heads/main/src/logo.png)" width="100">
+<img src="https://raw.githubusercontent.com/aejics/ReservaSalas/refs/heads/main/src/logo.png" width="100">
 
 # Reserva de Salas (Projeto Turma)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/aejics/reservasalas-projetoturma)
