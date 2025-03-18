@@ -10,8 +10,8 @@
 <body class="center">
     <br>
     <h1>Pagina Inicial</h1>
-    <h2>Este projeto é possível graças aos trabalhos das seguintes turmas:
-
+<h2>
+Este projeto é possível graças aos trabalhos das seguintes turmas:
 1ºD - Design de Funcionalidades Possíveis para a Aplicação
 2ºE - Criação das Expressões para o Backend SQL, e criação da aplicação.
 </h2>
