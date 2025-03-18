@@ -7,8 +7,7 @@
 </head>
 <body>
 <?php
-echo "Eu sou o código básico de PHP"
+echo "Pagina inicial"
 ?>    
 </body>
 </html>
-
