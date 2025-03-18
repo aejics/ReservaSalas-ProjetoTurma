@@ -36,6 +36,7 @@
 <br>
 <br>
 <br>
+    <br>
 <h2>
 Este projeto é possível graças aos trabalhos das seguintes turmas:
 <br>
