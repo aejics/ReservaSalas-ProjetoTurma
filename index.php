@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="center">
-    <h1>Pagina Inicial</h1>
     <br>
+    <h1>Pagina Inicial</h1>
     <h1>Esta é a Pagina Inicial para Reservar a Sala Multimédia</h1>
 <br>
 <br>
