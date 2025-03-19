@@ -14,7 +14,8 @@
 <h2>
 Este projeto é possível graças aos trabalhos das seguintes turmas:
 <br>
+
+<br>
 1ºD - Design de Funcionalidades Possíveis para a Aplicação
 2ºE - Criação das Expressões para o Backend SQL, e criação da aplicação.
 </h2>
-    
