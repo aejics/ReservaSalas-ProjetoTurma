@@ -12,7 +12,7 @@
     <h1>Reserva de Sala</h1>
 
     <h2>Formulário de Reserva</h2>
-    <form action="process_reserva.php" method="POST" class="mb-4">
+    <form action="" method="POST" class="mb-4">
         <div class="mb-3">
             <label for="tempo" class="form-label">Tempo</label>
             <input type="time" id="tempo" name="tempo" class="form-control" required>
@@ -43,12 +43,24 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>13:35</td>
-                <td>25/05/2025</td>
-                <td>Sala 46</td>
-                <td>Turma 2ºE</td>
-            </tr>
+            <?php
+            // Verifica se o formulário foi enviado
+            if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+                // Recebe os dados do formulário
+                $tempo = htmlspecialchars($_POST['tempo']);
+                $dia = htmlspecialchars($_POST['dia']);
+                $sala = htmlspecialchars($_POST['sala']);
+                $turma = htmlspecialchars($_POST['turma']);
+
+                // Exibe os dados na tabela
+                echo "<tr>";
+                echo "<td>$tempo</td>";
+                echo "<td>$dia</td>";
+                echo "<td>$sala</td>";
+                echo "<td>$turma</td>";
+                echo "</tr>";
+            }
+            ?>
         </tbody>
     </table>
 </body>
