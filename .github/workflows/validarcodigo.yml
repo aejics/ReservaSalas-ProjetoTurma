@@ -4,6 +4,10 @@ on: [push, pull_request]
 
 jobs:
   check-php-syntax:
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     name: Check PHP Syntax
     runs-on: ubuntu-latest
     steps:
