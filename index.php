@@ -1,3 +1,17 @@
+<?php
+    // Redirecionar a login caso não exista token
+    if (!isset($_COOKIE['token'])){
+        // Assumida página de login, depende da localização definida
+        // pela equipa login.
+        location("/login");
+        die("Não tem a sessão iniciada.");
+    } else {
+        // mostrar texto de baixo.
+        // até agora não temos mais desenvolvido pois
+        // falta o trabalho da equipa login.
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
