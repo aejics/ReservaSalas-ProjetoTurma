@@ -1,265 +1,133 @@
-body {
-
-    background: #2d2c3e;
-  
-    -webkit-font-smoothing: antialiased;
-  
-    -moz-osx-font-smoothing: grayscale;
-  
-    overflow: hidden;
-  
-    z-index: -1;
-  
-  }
-   
-  .container {
-  
-    display: table;
-  
-    height: 95vh;
-  
-    width: 90%;
-  
-    padding-bottom: 5vh;
-  
-    margin: auto auto;
-  
-    background: #2d2c3e;
-  
-    z-index: -1;
-  
-  }
-   
-  .content {
-  
-    display: table-cell;
-  
-    text-align: center;
-  
-    vertical-align: top;
-  
-  }
-   
-  h1 {
-  
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-  
-    font-size: 55px;
-  
-    font-weight: 300;
-  
-    color: #FFFFFF;
-  
-    text-align: center;
-  }
-   
-  .icon-container {
-  
-    margin-top: 30px;
-  
-    width: 100%;
-  
-    height: 10px;
-  
-  }
-   
-  .icon {
-  
-    cursor: pointer;
-  
-    position: relative;
-  
-    display: column;
-  
-    width: 60px;
-  
-    height: 60px;
-  
-    margin-left: -60px;
-  
-    margin-right: 12px;
-  
-    border-radius: 30px;
-  
-    overflow: hidden;
-  
-  }
-   
-  .icon::before, .icon::after {
-  
-    content: '';
-  
-    position: absolute;
-  
-    top: 0;
-  
-    left: 0;
-  
-    height: 100%;
-  
-    width: 100%;
-  
-    transition: all 0.25s ease;
-  
-    border-radius: 30px;
-  
-  }
-   
-  .icon i {
-  
-    position: relative;
-  
-    color: #FFFFFF;
-  
-    font-size: 30px;
-  
-    margin-top: 15px;
-  
-    transition: all 0.25s ease;
-  
-  }
-   
-  .icon-fill::before {
-  
-    transition-duration: 0.5s;
-  
-    box-shadow: inset 0 0 0 1px #16A085;
-  
-  }
-   
-  .icon-fill:hover::before {
-  
-    box-shadow: inset 0 0 0 60px #16A085;
-  
-  }
-   
-  .icon-enter::after {
-  
-    box-shadow: inset 0 0 0 1px #EB9532;
-  
-  }
-   
-  .icon-enter::before {
-  
-    border-radius: 0;
-  
-    margin-left: -100%;
-  
-    box-shadow: inset 0 0 0 60px #EB9532;
-  
-  }
-   
-  .icon-enter:hover::before {
-  
-    margin-left: 0;
-  
-  }
-   
-  .icon-expand::after {
-  
-    box-shadow: inset 0 0 0 1px #C82647;
-  
-  }
-   
-  .icon-expand::before {
-  
-    background: #C82647;
-  
-    box-shadow: inset 0 0 0 60px #2d2c3e;
-  
-  }
-   
-  .icon-expand:hover::before {
-  
-    box-shadow: inset 0 0 0 1px #2d2c3e;
-  
-  }
-   
-  .icon-collapse::before {
-  
-    border-radius: 0;
-  
-  }
-   
-  .icon-collapse:hover::before {
-  
-    box-shadow: 
-  
-      inset 0 30px 0 0 #8CC63F,
-  
-      inset 0 -30px 0 0 #8CC63F;
-  
-  }
-   
-  .icon-collapse::after {
-  
-    box-shadow: inset 0 0 0 1px #8CC63F;
-  
-  }
-   
-  .icon-rotate {
-  
-    box-shadow: inset 0 0 0 1px #7E3661;
-  
-  }
-   
-  .icon-rotate::after, .icon-rotate::before {
-  
-    border: 0px solid transparent;
-  
-  }
-   
-  .icon-rotate:hover::before {
-  
-    transition:
-  
-      border-top-width 0.3s ease,
-  
-      border-top-color 0.3s ease;
-  
-    border-width: 60px;
-  
-    border-top-color: #7E3661;
-  
-  }
-   
-  .icon-rotate:hover::after {
-  
-    transition:
-  
-      border-left-width 0.3s ease,
-  
-      border-left-color 0.3s ease;
-  
-    border-width: 60px;
-  
-    border-left-color: #7E3661;
-  
-  }
-   
-  .icon-rotate:hover {
-  
-    transition: background 0.001s ease 0.3s;
-  
-    background: #7E3661;
-  
-  }
-   
-  .icon-rotate i {
-  
-    z-index: 1;
-  
-  }
-   
-  @media (max-width: 900px) {
-  
-    /* Empty media query preserved from original SCSS */
-  
-  }
-h1 {
-    background-color: #fa18c1;
-    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    align-self: 12px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Estilo dos Ícones-Botões */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.icon-button i {
+  font-size: 2.5em;
+  color: #3498db;
+  padding: 15px;
+  border-radius: 50%;
+  transition: all 0.4s ease;
+  background-color: transparent;
+}
+
+.icon-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(52, 152, 219, 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.icon-button:hover i {
+  color: #2980b9;
+  transform: rotate(15deg) scale(1.2);
+}
+
+.icon-button:hover::before {
+  width: 120%;
+  height: 120%;
+}
+
+.icon-button:active i {
+  transform: scale(0.9);
+  color: #1a5276;
+}
+
+.icon-button span {
+  display: block;
+  font-size: 0.7em;
+  color: #7f8c8d;
+  margin-top: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.icon-button:hover span {
+  opacity: 1;
+}
+
+/* Responsividade */
+@media screen and (max-width: 600px) {
+  .container {
+      margin: 20px;
+      padding: 20px;
+  }
+
+  .icon-container {
+      gap: 20px;
+  }
+
+  .icon-button i {
+      font-size: 2em;
+      padding: 10px;
+  }
+}
+
+/* Variações de Cores para Ícones */
+.icon-fill i { color: #3498db; }
+.icon-enter i { color: #2ecc71; }
+.icon-expand i { color: #e74c3c; }
+.icon-collapse i { color: #f39c12; }
+.icon-rotate i { color: #9b59b6; }
