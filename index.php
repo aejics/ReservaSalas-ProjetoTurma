@@ -20,7 +20,7 @@
 <p>
 <div class="icon icon-expand">
 <i class="fa fa-bars"></i>
-<link rel=localhost href="localhost/reserva_prof">
+<link href="localhost/reserva_prof">
 </div>
 <p></p>
 <div class="icon icon-collapse">
