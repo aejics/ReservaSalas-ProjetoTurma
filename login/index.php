@@ -25,25 +25,23 @@
                 <path d="M0 20C0 8.9543 8.95431 0 20 0H250C261.046 0 270 8.95431 270 20V366.417C270 381.573 253.799 
                     391.222 240.473 384.002L10.4726 259.388C4.01969 255.892 0 249.143 0 241.803V20Z" fill="white" />
             </svg>
-
-            <h2 class="heading">Login</h2>
-            <form action="">
+            <h2 class="heading">Iniciar Sessão</h2>
+            <form action="/login/" method="POST">
                 <div class="input-grup">
-                    <input type="email" placeholder="Email">
+                    <input type="text" name="username" placeholder="Nome de Utilizador" id="username" required>
                     <span class="border"></span>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="input-grup">
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Palavra-Passe" id="password" required>
                     <span class="border"></span>
                     <i class="fa-solid fa-key"></i>
                 </div>
-                <a href="">Forgot Password?</a>
-                <button type="submit">Login</button>
+                <button type="submit">Iniciar Sessão</button>
             </form>
         </div>
         <div class="sosmed">
-                <img src="https://avatars.githubusercontent.com/u/181112077?s=200&v=4">
+                <img src="/assets/aejics.png" class="logoaejics">
         </div>
         <div class="cardRegis">
             <svg xmlns="http://www.w3.org/2000/svg" width="270" height="447" viewBox="0 0 270 447" fill="none">
