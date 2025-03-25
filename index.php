@@ -10,26 +10,27 @@
 <h1>Reserva Salas</h1>
 <p></p>
 <div class="icon-container">
-<div class="icon icon-fill">
-<i class="fa fa-home"></i>
-</div>
-<p></p>
-<div class="icon icon-enter">
-<i class="fa fa-user"></i>
-</div>
-<p>
-<div class="icon icon-expand">
-<i class="fa fa-bars"></i>
-<link href="localhost/reserva_prof">
-</div>
-<p></p>
-<div class="icon icon-collapse">
-<i class="fa fa-sign-in"></i>
-</div>
-<p></p>
-<div class="icon icon-rotate">
-<i class="fa fa-phone"></i>
-<p></p>
+    <div class="icon icon-fill">
+        <i class="fa fa-home"></i>
+    </div>
+    <p></p>
+    <div class="icon icon-enter">
+        <i class="fa fa-user"></i>
+    </div>
+    <p></p>
+    <div class="icon icon-expand">
+        <a href="http://localhost/reserva_prof">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <p></p>
+    <div class="icon icon-collapse">
+        <i class="fa fa-sign-in"></i>
+    </div>
+    <p></p>
+    <div class="icon icon-rotate">
+        <i class="fa fa-phone"></i>
+    </div>
 </div>
 </i>
 </div>
