@@ -1,3 +1,12 @@
+<?php
+    require '../giaeconnect/module.php';
+    if (isset($_POST['username']) && isset($_POST['password'])){
+        loginGiae($_POST['username'], $_POST['password']);
+    }
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +34,7 @@
                 <path d="M0 20C0 8.9543 8.95431 0 20 0H250C261.046 0 270 8.95431 270 20V366.417C270 381.573 253.799 
                     391.222 240.473 384.002L10.4726 259.388C4.01969 255.892 0 249.143 0 241.803V20Z" fill="white" />
             </svg>
-            <h2 class="heading">Iniciar Sessão</h2>
+                <h2 class="heading">Iniciar Sessão</h2>
             <form action="/login/" method="POST">
                 <div class="input-grup">
                     <input type="text" name="username" placeholder="Nome de Utilizador" id="username" required>
