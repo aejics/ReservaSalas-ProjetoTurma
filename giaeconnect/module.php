@@ -13,20 +13,27 @@
 
 // Este módulo depende da versão mais recente do GIAEConnect do itsjuoum.
 
-require 'giaeconnect.php'; // ainda não está nesta pasta, por enquanto
-
+require 'giaeConnect.php'; // ainda não está nesta pasta, por enquanto
+$giaeConnect = new \juoum\GiaeConnect\GiaeConnect("giae.aejics.org");
 // Não adicionar ainda o GIAEConnect
 
 function loginGiae($user, $pass){
-    // adicionar função de login de origem do giae
-    // validar
-    // adicionar cookie do utilizador
-    setcookie();
+    $sessao = $giaeConnect->getSession($user, $pass);
+    if (str_contains($giaeconnect->getConfInfo(), 'Erro do Servidor')){
+        setcookie("token", "", time() - 3600, "/");
+        die("A sua sessão é inválida.");
+    } else {
+        setcookie("token", $sessao, time() + 3600, "/");
+    }
 }
 
 function validateSessaoValida($token){
-    // adicionar função de validar token de sessão
-    // este token irá sempre ficar nos cookies da pessoa com validade de 1 hora
+    $giaeconnect->session=$token;
+    if (str_contains($giaeconnect->getConfInfo(), 'Erro do Servidor')){
+        // Esta ação pode levar trigger com um login noutro separador do GIAE.
+        setcookie("token", "", time() - 3600, "/");
+        die("A sua sessão é inválida.");
+    }
 }
 
 function getDataFromUser($token){
