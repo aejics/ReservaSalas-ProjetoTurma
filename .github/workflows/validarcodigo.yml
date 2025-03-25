@@ -3,12 +3,12 @@ name: Check PHP Syntax
 on: [push, pull_request]
 
 jobs:
-  check-php-syntax:
+  check-php-html-syntax:
     permissions:
       contents: read
       issues: write
       pull-requests: write
-    name: Check PHP Syntax
+    name: Ver o Syntax de PHP e HTML
     runs-on: ubuntu-latest
     steps:
       -
@@ -21,7 +21,12 @@ jobs:
         name: Checkout
         uses: actions/checkout@v4
       -
-        name: Check syntax
+        name: PHP Sintaxe
         uses: mlocati/check-php-syntax@v1
         with:
           directory: .
+      -
+        name: HTML Sintaxe
+        uses: Cyb3r-Jak3/html5validator-action
+        with:
+          root: .
