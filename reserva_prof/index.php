@@ -54,21 +54,24 @@
 <body>
     <div class="left-icons">
         <div class="icon icon-fill">
+        <a href="/">
             <i class="fa fa-home"></i>
+    </a>
         </div>
         <div class="icon icon-enter">
+        <a href="/perfil">
             <i class="fa fa-user"></i>
-        </div>
-        <div class="icon icon-expand">
-            <a href="/reserva_prof">
-                <i class="fa fa-bars"></i>
-            </a>
+    </a>
         </div>
         <div class="icon icon-collapse">
+        <a href="/sign_in">
             <i class="fa fa-sign-in"></i>
+    </a>
         </div>
         <div class="icon icon-rotate">
+        <a href="/suporte">
             <i class="fa fa-phone"></i>
+    </a>
         </div>
     </div>
 
