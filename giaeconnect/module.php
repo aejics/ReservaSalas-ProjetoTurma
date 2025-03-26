@@ -13,17 +13,17 @@
 
 // Este módulo depende da versão mais recente do GIAEConnect do itsjuoum.
 
-require 'giaeConnect.php'; // ainda não está nesta pasta, por enquanto
-$giaeConnect = new \juoum\GiaeConnect\GiaeConnect("giae.aejics.org");
-// Não adicionar ainda o GIAEConnect
-
 function loginGiae($user, $pass){
+    require 'giaeConnect.php';
+    $giaeConnect = new \juoum\GiaeConnect\GiaeConnect("giae.aejics.org");
     $sessao = $giaeConnect->getSession($user, $pass);
-    if (str_contains($giaeconnect->getConfInfo(), 'Erro do Servidor')){
+    $giaeConnect->session=$sessao;
+    if (str_contains($giaeConnect->getConfInfo(), 'Erro do Servidor')){
         setcookie("token", "", time() - 3600, "/");
         die("A sua sessão é inválida.");
     } else {
         setcookie("token", $sessao, time() + 3600, "/");
+        header("Location: /");
     }
 }
 

@@ -3,7 +3,7 @@
     if (!isset($_COOKIE['token'])){
         // Assumida página de login, depende da localização definida
         // pela equipa login.
-        location("/login");
+        header("Location: /login");
         die("Não tem a sessão iniciada.");
     } else {
         // mostrar texto de baixo.
